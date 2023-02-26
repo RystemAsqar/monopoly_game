@@ -10,7 +10,7 @@ public class Map {
     List<Location> locations = new ArrayList<>(); 
 
     void map() {
-         // Create locations and add them to the locations arraylist
+
          locations.add(new Location("START", 0));
          locations.add(new LocationCity("ABAY QUNANBAY", 1,
                  60, 10, null));
@@ -20,7 +20,7 @@ public class Map {
          locations.add(new LocationCity("MAGZHAN ZHUMABAY", 3,
                  60, 10, null));
  
-         locations.add(new TaxAdmin("INCOME TAX", 4, 200)); // TAX ADMINISTRATION LOCATION
+         locations.add(new TaxAdmin("INCOME TAX", 4, 200)); 
  
          locations.add(new LocationCity("SHAKARIM QUDAIBERDI", 5,
                  200, 40, null));
@@ -34,11 +34,11 @@ public class Map {
                  100, 20, null));
          locations.add(new LocationCity("TURAR RYSKULOV", 9,
                  120, 25, null));
-         locations.add(new Jail("JAIL", 10, 0));// JAIL LOCATION
+         locations.add(new Jail("JAIL", 10, true));
  
          locations.add(new LocationCity("BEIMBET MAILIN", 11,
                  140, 30, null));
-         locations.add(new TaxAdmin("TAX ADMIN", 12, 150)); // TAX ADMINISTRATION LOCATION
+         locations.add(new TaxAdmin("TAX ADMIN", 12, 150)); 
  
          locations.add(new LocationCity("ALIBI ZHANGELDIN", 13,
                  140, 30, null));
@@ -54,8 +54,7 @@ public class Map {
                  180, 35, null));
          locations.add(new LocationCity("SHOQAN UALIKHANOV", 19,
                  200, 40, null));
-         locations.add(new TaxAdmin("FREE PARKING", 20, 0)); // BURADA HICBISEY OLMAMASI DOGRU
- 
+         locations.add(new TaxAdmin("FREE PARKING", 20, 0)); 
          locations.add(new LocationCity("MIRZHAQYP DULATULY", 21,
                  220, 45, null));
          locations.add(new LuckyCard("CHANCE",22));
@@ -75,7 +74,7 @@ public class Map {
                  280, 60, null));
  
  
-         locations.add(new Jail("GO TO JAIL", 30, 1));
+         locations.add(new Jail("GO TO JAIL", 30, false));
  
  
          locations.add(new LocationCity("MUKHTAR AUEZOV", 31,

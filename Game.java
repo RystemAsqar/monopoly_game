@@ -73,7 +73,7 @@ public class Game {
 
                 if(playerLocAfterMove instanceof Jail) {
                     Jail playerLocAfterMoveConvert = (Jail)playerLocAfterMove;
-                    if(playerLocAfterMoveConvert.getType()!=0) {
+                    if(!playerLocAfterMoveConvert.getType()) {
                         player.setJail(true);
                         player.setCurrentLocIndex(Jail.jailLocIndex);
                     }
@@ -101,7 +101,7 @@ public class Game {
                                 player.setCapital(player.getCapital()-price);
                                 playerLocAfterMoveConvert.setPlayer(player);
                                 player.getOwnLocation().add(playerLocAfterMoveConvert);
-                                System.out.println(player.getToken()+"bought location: " + playerLocAfterMoveConvert.getName() + " and remaining money is: " + player.getCapital());
+                                System.out.println(player.getToken()+" bought location: " + playerLocAfterMoveConvert.getName() + " and remaining money is: " + player.getCapital());
                             } else {
                                 System.out.println("Sorry, You don't have enough money.");
                             }

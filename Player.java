@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class Player {
 
     private String token; 
-    private int startCapital = 1500;
+    private int startCapital = 2000; // sdelal startoviy kapital na summu 2000$, dumau tak budet udobnei, chem 2 000 000 000, zdes' mnogo cifr(((
     private List<LocationCity> ownLocation = new ArrayList<>();  
     private boolean jailType = false;
     private int currentLocIndex = 0;
